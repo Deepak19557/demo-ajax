@@ -1,0 +1,13 @@
+<div style="text-align:center;">
+    <%= form_tag ajax_form_path, remote: true , multipart: true do %>
+        <%= label_tag :first_name %>
+        <%= text_field_tag :first_name %> <br><br>
+        <%= label_tag :last_name %> 
+        <%= text_field_tag :last_name %> <br><br>
+        <%= label_tag :number %>
+        <%= number_field_tag :number %> <br><br>
+        <%= submit_tag "submit" %>        
+    <% end %>
+</div>
+
+ 
